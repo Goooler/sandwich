@@ -54,6 +54,9 @@ dependencies {
 }
 ```
 
+## R8 / ProGuard
+The specific rules are [already bundled](sandwich/src/main/resources/META-INF/proguard/sandwich.pro) into the JAR which can be interpreted by R8 automatically.
+
 </details>
 
 ## Use Cases
