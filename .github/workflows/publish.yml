@@ -8,6 +8,7 @@ jobs:
   publish:
     name: Release build and publish
     runs-on: ubuntu-latest
+    if: github.repository == 'skydoves/sandwich'
     steps:
       - name: Check out code
         uses: actions/checkout@v3
