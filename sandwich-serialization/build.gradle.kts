@@ -34,11 +34,9 @@ mavenPublishing {
   )
 
   pom {
-    name.set(artifactId)
-    description.set(
-      "A lightweight and pluggable sealed API library for modeling Retrofit " +
-        "responses and handling exceptions on Kotlin and Android."
-    )
+    name = artifactId
+    description = "A lightweight and pluggable sealed API library for modeling Retrofit " +
+      "responses and handling exceptions on Kotlin and Android."
   }
 }
 
