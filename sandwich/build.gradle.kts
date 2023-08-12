@@ -18,8 +18,8 @@ import com.github.skydoves.sandwich.Configuration
 
 plugins {
   id("kotlin")
-  id(libs.plugins.kotlin.serialization.get().pluginId)
-  id(libs.plugins.nexus.plugin.get().pluginId)
+  alias(libs.plugins.kotlin.serialization)
+  alias(libs.plugins.nexus.plugin)
 }
 
 apply(from = "${rootDir}/scripts/publish-module.gradle.kts")

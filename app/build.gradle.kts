@@ -18,11 +18,11 @@ import com.github.skydoves.sandwich.Configuration
 
 @Suppress("DSL_SCOPE_VIOLATION")
 plugins {
-  id(libs.plugins.android.application.get().pluginId)
-  id(libs.plugins.kotlin.android.get().pluginId)
-  id(libs.plugins.kotlin.serialization.get().pluginId)
-  id(libs.plugins.kotlin.kapt.get().pluginId)
-  id(libs.plugins.ksp.get().pluginId)
+  alias(libs.plugins.android.application)
+  alias(libs.plugins.kotlin.android)
+  alias(libs.plugins.kotlin.serialization)
+  alias(libs.plugins.kotlin.kapt)
+  alias(libs.plugins.ksp)
 }
 
 android {

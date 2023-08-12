@@ -17,9 +17,9 @@ import com.github.skydoves.sandwich.Configuration
 
 @Suppress("DSL_SCOPE_VIOLATION")
 plugins {
-  id(libs.plugins.android.library.get().pluginId)
-  id(libs.plugins.kotlin.android.get().pluginId)
-  id(libs.plugins.nexus.plugin.get().pluginId)
+  alias(libs.plugins.android.library)
+  alias(libs.plugins.kotlin.android)
+  alias(libs.plugins.nexus.plugin)
 }
 
 apply(from = "${rootDir}/scripts/publish-module.gradle.kts")
