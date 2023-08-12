@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-@file:Suppress("unused", "MemberVisibilityCanBePrivate")
+@file:Suppress("MemberVisibilityCanBePrivate")
 
 package com.skydoves.sandwich
 
@@ -179,7 +179,7 @@ public sealed interface ApiResponse<out T> {
      * @return A [StatusCode] from the network callback response.
      */
     public fun <T> getStatusCodeFromResponse(response: Response<T>): StatusCode {
-      return StatusCode.values().find { it.code == response.code() }
+      return StatusCode.entries.find { it.code == response.code() }
         ?: StatusCode.Unknown
     }
   }

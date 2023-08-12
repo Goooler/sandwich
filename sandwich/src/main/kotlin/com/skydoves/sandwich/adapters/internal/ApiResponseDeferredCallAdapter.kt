@@ -32,7 +32,7 @@ import java.lang.reflect.Type
  *
  * Request API network call asynchronously and returns [Deferred] of [ApiResponse].
  */
-internal class ApiResponseDeferredCallAdapter<T> constructor(
+internal class ApiResponseDeferredCallAdapter<T>(
   private val resultType: Type,
   private val coroutineScope: CoroutineScope,
 ) : CallAdapter<T, Deferred<ApiResponse<T>>> {

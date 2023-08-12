@@ -27,7 +27,7 @@ import java.lang.reflect.Type
  *
  * request API network call asynchronously and returns [DataSource].
  */
-internal class DataSourceCallAdapter constructor(
+internal class DataSourceCallAdapter(
   private val responseType: Type,
 ) : CallAdapter<Type, Call<DataSource<Type>>> {
 

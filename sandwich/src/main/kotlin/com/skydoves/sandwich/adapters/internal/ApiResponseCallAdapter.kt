@@ -28,7 +28,7 @@ import java.lang.reflect.Type
  *
  * Request API network call asynchronously and returns [ApiResponse].
  */
-internal class ApiResponseCallAdapter constructor(
+internal class ApiResponseCallAdapter(
   private val resultType: Type,
   private val coroutineScope: CoroutineScope,
 ) : CallAdapter<Type, Call<ApiResponse<Type>>> {
