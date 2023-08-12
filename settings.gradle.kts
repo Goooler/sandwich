@@ -26,6 +26,8 @@ dependencyResolutionManagement {
   }
 }
 
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+
 rootProject.name = "SandwichDemo"
 include(":app")
 include(":sandwich")

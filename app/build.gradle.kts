@@ -53,9 +53,9 @@ android {
 }
 
 dependencies {
-  implementation(project(":sandwich"))
-  implementation(project(":sandwich-datasource"))
-  implementation(project(":sandwich-serialization"))
+  implementation(projects.sandwich)
+  implementation(projects.sandwichDatasource)
+  implementation(projects.sandwichSerialization)
 
   // android supports
   implementation(libs.material)

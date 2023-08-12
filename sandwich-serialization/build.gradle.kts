@@ -41,7 +41,7 @@ mavenPublishing {
 }
 
 dependencies {
-  api(project(":sandwich"))
+  api(projects.sandwich)
   api(libs.serialization)
 
   // unit test

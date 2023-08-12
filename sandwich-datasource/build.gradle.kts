@@ -57,7 +57,7 @@ android {
 }
 
 dependencies {
-  api(project(":sandwich"))
+  api(projects.sandwich)
 
   implementation(libs.appcompat)
   implementation(libs.coroutines)
